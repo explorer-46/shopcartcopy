@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ProductComponent } from './product/product.component';
+import {HttpClientModule} from '@angular/common/http'
 
 const link:Routes=[
   {path:"",component:ProductComponent}
@@ -20,6 +21,7 @@ const link:Routes=[
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     RouterModule.forRoot(link)
   ],
   providers: [],
